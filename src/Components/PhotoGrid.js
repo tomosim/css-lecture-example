@@ -33,7 +33,7 @@ class PhotoGrid extends React.Component {
       <img src={loader} alt="loading..." />
     ) : (
       <>
-        <div id="photo-grid">
+        <div>
           {this.state.photoURLs.map(URL => {
             return <ImageTile key={URL} url={URL} />;
           })}

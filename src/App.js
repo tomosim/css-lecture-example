@@ -6,24 +6,11 @@ import Sidebar from "./Components/Sidebar";
 import Footer from "./Components/Footer";
 
 class App extends Component {
-  state = {
-    isDarkMode: false
-  };
-
-  toggleDarkMode = () => {
-    this.setState({ isDarkMode: !this.state.isDarkMode });
-  };
+  state = {};
 
   render() {
     return (
-      <div
-        className="App"
-        style={
-          this.state.isDarkMode
-            ? { backgroundColor: "black", color: "white" }
-            : { backgroundColor: "white", color: "black" }
-        }
-      >
+      <div className="App">
         <Header />
         <Sidebar toggleDarkMode={this.toggleDarkMode} />
         <Main />
